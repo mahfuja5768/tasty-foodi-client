@@ -1,0 +1,50 @@
+[
+    {
+        "food_id": "01",
+        "title": "Apple Frangipan Tart",
+        "img": "https://www.themealdb.com/images/media/meals/wxywrq1468235067.jpg",
+        "price": "20.00",
+        "description": "A creamy mixture of ground almonds, butter, sugar and eggs that is sometimes used to fill tarts. Halved stone fruit, such as apricots and plums, can be baked on top to make a delicious dessert.Frangipane is a pastry filling made with finely ground almonds or almond meal. It is sometimes referred to as almond cream. And, being more or less like a pie filling, frangipane is never consumed raw because it contains raw eggs."
+        
+    },
+    {
+        "food_id": "02",
+        "title": "York cheesecake",
+        "img": "https://www.themealdb.com/images/media/meals/swttys1511385853.jpg",
+        "price": "24.00",
+        "description": "New York cheesecake is heavy on the cream cheese which is why it's so dense and rich. Extra cream cheese isn't the only thing that makes New York cheesecake so special. It also includes extra eggs and egg yolks to provide and smooth consistency.This recipe makes a classic New York-style cheesecake with a buttery graham cracker crust and rich, dense filling made from cream cheese, eggs, sugar, sour cream, vanilla, a hint of lemon, and a few tablespoons of flour. Cream cheese is the key ingredient, so I recommend using a good brand, like Philadelphia."
+        
+    },
+    {
+        "food_id": "03",
+        "title": "Jerk chicken with rice & peas",
+        "img": "https://www.themealdb.com/images/media/meals/tytyxu1515363282.jpg",
+        "price": "20.00",
+        "description": "Jerk chicken gets its distinguishable flavor from spices that are native to the island of Jamaica. Spices like the scotch bonnet pepper give jerk chicken its spicy kick. Other spices that are incorporated into a jerk recipe are allspice, ginger, garlic and thyme.Jerk, as a stand-alone term, refers to the way in which meat is seasoned, smoked and grilled. Whereas a historical jerk seasoning recipe calls for bird peppers, pimento and pepper elder, modern recipes may include Scotch bonnet peppers, scallions, garlic, ginger, pimento, thyme and cinnamon"
+        
+    },
+    {
+        "food_id": "04",
+        "title": "Beef Rendang",
+        "img": "https://www.themealdb.com/images/media/meals/bc8v651619789840.jpg",
+        "price": "50.00",
+        "description": "Beef Rendang is a flavorful West Sumatran dry curry that's made with beef, that's cooked together with a spice paste and coconut milk until fork-tender. It's then fried together with the remaining braising liquid until the liquid caramelizes around the beef, coating it with an insane amount of flavor.Rendang, an Indonesian flavour-bomb that explodes in your mouth. Rendang is a spicy meat dish that has its origins in the Sumatra region in Indonesia. The incredible aroma of the fried curry leaves and the coconut shards add the perfect flavour and texture to the dish."
+        
+    },
+    {
+        "food_id": "05",
+        "title": "Christmas cake",
+        "img": "https://www.themealdb.com/images/media/meals/ldnrm91576791881.jpg",
+        "price": "54.00",
+        "description": "During the Christmas season, it's also called Weihnachtsstollen or Christstollen.Many people say it needs to be eaten with Wensleydale, a type of cheese produced in North Yorkshire... Although some say that cheddar is the way to go. And others say the cake needs to be icing-free. Eating cheese with your Christmas fruit cake is actually a long-held Yorkshire tradition.The Christmas cake as we know it comes from two Christian feast days: Twelfth Night and Easter. When families in the sixteenth century made their Christmas puddings for the big day, they would often use some of the mixture, with the addition of flour and eggs, to bake and eat for Eastertime."
+        
+    },
+    {
+        "food_id": "06",
+        "title": "Smoked Haddock Kedgeree",
+        "img": "https://www.themealdb.com/images/media/meals/1550441275.jpg",
+        "price": "20.00",
+        "description": "Kedgeree (or occasionally kitcherie, kitchari, kidgeree, kedgaree, kitchiri, khichuri, or kaedjere) is a dish consisting of cooked, flaked fish (traditionally smoked haddock), boiled rice, parsley, hard-boiled eggs, curry powder, butter or cream, and occasionally sultanas.Haddock meat is white with a somewhat sweet taste, firm yet tender, and has smaller flakes than cod. It is a very versatile fish which can be prepared and cooked in nearly any style, with popular preparations including fried for fish and chips and the classic baked haddock with bread crumbs.Description. Haddock is a saltwater fish and is a member of the cod family. Wholey Haddock is a mild, slightly sweet tasting fish without an overpowering fishy flavor. Its white flesh is lean, with low levels of oiliness, and fine flakes that are firm and tender once cooked."
+        
+    }
+]

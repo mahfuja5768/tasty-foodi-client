@@ -1,8 +1,6 @@
-import React from 'react';
+
 import logo1 from '../../../assets/images/img1.jpg';
 import logo2 from '../../../assets/images/img2.jpg';
-import logo3 from '../../../assets/images/img3.jpg';
-import logo4 from '../../../assets/images/img4.jpg';
 import logo5 from '../../../assets/images/img5.jpg';
 
 const Banner = () => {

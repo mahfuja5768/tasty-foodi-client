@@ -1,15 +1,15 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import {} from "react-router-dom";
 import { AuthContext } from "../../contexts/AuthProvider";
 import { toast } from "react-hot-toast";
 
 const AddReviews = ({ details }) => {
   const { title, _id, img } = details || {};
-  const {user} = useContext(AuthContext);
+  const { user } = useContext(AuthContext);
 
   console.log(details);
 
-  const handlePlaceReview = event => {
+  const handlePlaceReview = (event) => {
     event.preventDefault();
     const form = event.target;
     const email = user?.email || "unregister";
@@ -19,17 +19,16 @@ const AddReviews = ({ details }) => {
     // console.log(email, review, rating);
 
     const order = {
-        food: _id,
-        serviceName: title,
-        email,
-        review,
-        rating,
-        img,
-        date
-      };
+      food: _id,
+      serviceName: title,
+      email,
+      review,
+      rating,
+      img,
+      date,
+    };
 
-
-      fetch("http://localhost:5000/reviews", {
+    fetch("http://localhost:5000/reviews", {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -40,15 +39,12 @@ const AddReviews = ({ details }) => {
       .then((data) => {
         if (data.acknowledged) {
           toast.success("Successfully order placed.");
-          // console.log(data);
+          console.log(data);
           form.reset();
         }
       })
       .catch((err) => console.log(err));
-
-
   };
-
 
   return (
     <div className="pt-5 mb-5">
@@ -66,13 +62,13 @@ const AddReviews = ({ details }) => {
             className="input input-bordered input-error w-full"
             readOnly
           />
-            <input
-              name="rating"
-              type="text"
-              placeholder="Rating of food"
-              className="input input-bordered input-error w-full"
-              required
-            />
+          <input
+            name="rating"
+            type="text"
+            placeholder="Rating of food"
+            className="input input-bordered input-error w-full"
+            required
+          />
           <input
             name="date"
             type="date"
@@ -81,14 +77,14 @@ const AddReviews = ({ details }) => {
             required
           />
           <input
-          name="review"
-          type="text"
-          className="input input-bordered input-error w-full"
-          placeholder="Your review"
-          required
-        ></input>
+            name="review"
+            type="text"
+            className="input input-bordered input-error w-full"
+            placeholder="Your review"
+            required
+          ></input>
         </div>
-        
+
         <input
           className="mt-5 btn bg-orange-700 text-white font-bold"
           type="submit"

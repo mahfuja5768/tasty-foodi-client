@@ -1,14 +1,12 @@
-import React from "react";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import { FaArrowRight } from "react-icons/fa";
-import { PhotoProvider, PhotoView } from 'react-photo-view';
 
 const AllFoodsCards = ({ foodsCard }) => {
-  const { food_id, _id, img, description, price, title } = foodsCard;
+  const { _id, img, description, price, title } = foodsCard || {};
 
   return (
     <div>
-      <div className="card w-96 bg-base-100 shadow-xl p-4">
+      <div className="bg-pink-200 card w-96 shadow-xl p-4">
         <figure>
           {/* <PhotoProvider>
             <PhotoView src={img}>

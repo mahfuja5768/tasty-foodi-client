@@ -9,8 +9,8 @@ import AddReviews from "../Pages/AddReviews/AddReviews";
 import Login from "../Pages/Login/Login";
 import Signup from "../Pages/Signup/Signup";
 import AllReviews from "../Pages/AllReviews/AllReviews";
-import MyReview from "../Pages/MyReviews/MyReview";
 import MyReviews from "../Pages/MyReviews/MyReviews";
+import PrivateRoute from "./PrivateRoute";
 
 export const router = createBrowserRouter([
   {
@@ -49,7 +49,7 @@ export const router = createBrowserRouter([
       },
       {
         path: "/addReviews",
-        element: <AddReviews></AddReviews>,
+        element: <PrivateRoute><AddReviews></AddReviews></PrivateRoute>,
       },
       {
         path: "/allReviews",
@@ -61,4 +61,7 @@ export const router = createBrowserRouter([
       },
     ],
   },
+  {
+    path:'*', element:<div className="text-center font-bold mt-20 text-5xl text-orange-500"><h1>Sorry! 404 Page not found!</h1></div>
+   },
 ]);

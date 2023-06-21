@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { FaMixer, FaBars } from "react-icons/fa";
 import logo from "../../../assets/images/logo2.png";
@@ -20,7 +20,7 @@ const Header = () => {
   };
 
   return (
-    <div className="shadow-md hover:shadow-xl rounded-b-lg mb-5">
+    <div className="shadow-md hover:shadow-xl rounded-b-lg mb-5 bg-pink-200">
       <div>
         <nav className="nav w-full py-0 md:flex justify-between items-center">
           <div className="md:flex flex justify-between items-center">

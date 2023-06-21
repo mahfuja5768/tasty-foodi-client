@@ -1,17 +1,17 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import { AuthContext } from "../../contexts/AuthProvider";
-import { FaUserAlt } from "react-icons/fa";
+import { FaUserAlt, FaTrashAlt } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
+const MyReview = ({ myReview, handleDelete }) => {
+  console.log(myReview);
 
-const MyReview = ({myReview}) => {
-    console.log(myReview)
-
-    const {user} = useContext(AuthContext);
-    const { email, review, rating, img, food, serviceName, date } = myReview;
+  const { user } = useContext(AuthContext);
+  const { email, review, rating, img, food, serviceName, date, _id } = myReview;
 
   return (
     <div>
-      <div className="card w-full bg-base-100 shadow-2xl  mb-5 ">
+      <div className="bg-pink-200 card w-full bg-base-100 shadow-2xl  mb-5 ">
         <div className="flex items-center justify-around">
           <div className="flex items-center">
             <div>
@@ -28,9 +28,7 @@ const MyReview = ({myReview}) => {
               </figure>
             </div>
             <div>
-              <h1 className="text-xl font-bold">
-                Person email: {email}
-              </h1>
+              <h1 className="text-xl font-bold">Person email: {email}</h1>
               <h1>Date: {date}</h1>
               <h1 className="me-4">Rating: {rating}</h1>
             </div>
@@ -49,8 +47,15 @@ const MyReview = ({myReview}) => {
               alt=""
             />
           </figure>
+            <button
+              onClick={() => handleDelete(_id)}
+              className="ms-3 btn btn-outline text-white bg-orange-700"
+            >
+              {" "}
+              <FaTrashAlt></FaTrashAlt>
+            </button>
+          </div>
         </div>
-      </div>
     </div>
   );
 };

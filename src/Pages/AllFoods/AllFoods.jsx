@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import AllFoodsCards from "./AllFoodsCards";
 
 const AllFoods = () => {

@@ -1,5 +1,4 @@
-import React from "react";
-import img from "../../../assets/images/img2.jpg";
+
 import "./About.css";
 
 const About = () => {
